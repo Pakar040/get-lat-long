@@ -34,7 +34,7 @@ class App:
     def run(self):
         if self.directory.get():
             writer = PoleDataWriter(self.directory.get())
-            writer.write_to_excel()
+            writer.write_to_csv()
         CTkMessagebox(
             title='',
             message="Spreadsheet with latitudes an longitudes in folder",
